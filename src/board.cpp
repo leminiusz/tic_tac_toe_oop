@@ -19,7 +19,9 @@ Board::Board(){
 
 //pokazuje obecny stan planszy
 void Board::pokaz() const{
+     cout << "   0   1   2"<<'\n';
     for(int i=0;i<3;i++){
+        cout<<i<<"  ";
         for(int j=0;j<3;j++){
             if(board[i][j]==Mark::empty){
                 cout<<' ';
@@ -33,7 +35,7 @@ void Board::pokaz() const{
         }
         cout<<endl;
         if(i<2)
-        cout<<"---------"<<endl;
+        cout<<"  ---+---+---"<<endl;
     }
 }
 
