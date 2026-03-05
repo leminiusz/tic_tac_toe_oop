@@ -16,6 +16,7 @@ class Board{
         Board();
         void pokaz() const;
         bool ustawPole(int r, int c, Mark m);
+        void cofnijruch(int r,int c);
         Mark wartoscPola(int r, int c) const;
         Mark zwyciesca() const;
         bool czyRemis() const;

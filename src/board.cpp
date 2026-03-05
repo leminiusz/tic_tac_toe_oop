@@ -94,3 +94,11 @@ bool Board::czyRemis() const{
     }
     return true;
 }
+
+//do minimax
+void Board::cofnijruch(int row, int col) {
+    if(row >= 0 && row <= 2 && col >= 0 && col <= 2) {
+        board[row][col] = Mark::empty;
+    }
+}
+
